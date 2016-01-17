@@ -43,7 +43,7 @@ boot(app, __dirname, function(err) {
       httpNodeRoot: "/api",
       // By default, all user data is stored in the Node-RED install directory. To
       // use a different location, the following property can be used
-      userDir: process.cwd() + "/.nodered/",
+      userDir: process.cwd() + "/nodered/",
       //a directory to search for additional installed nodes.
       // Node-RED searches the nodes directory under install directory.
       // This property allows an additional directory to be searched,
