@@ -8,8 +8,8 @@ var app = module.exports = loopback();
 var RED = require('node-red');
 
 // configure view handler
-//app.set('view engine', 'ejs');
-//app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 
 // configure body parser
 app.use(bodyParser.urlencoded({extended: true}));

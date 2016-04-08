@@ -16,10 +16,19 @@
           "rejectUnauthorized": false
         },
         "auth": {
-          "user": "email@address.com",
-          "pass": "password"
+          "user": "bauhaus.noreply@gmail.com",
+          "pass": "[T@)sF6t"
         }
       }
     ]
+  },
+  "postgres": {
+    "host": "",
+    "port": 0,
+    "database": "bauhaus",
+    "password": "",
+    "name": "postgres",
+    "user": "",
+    "connector": "postgresql"
   }
 }

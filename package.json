@@ -1,7 +1,7 @@
 {
   "name": "bauhaus",
   "version": "2.0.0",
-  "description":"",
+  "description": "",
   "main": "server/server.js",
   "scripts": {
     "start": "nodemon .",
@@ -9,8 +9,10 @@
     "test": "tape tests/**/*.js"
   },
   "dependencies": {
+    "body-parser": "^1.15.0",
     "compression": "^1.0.3",
     "cors": "^2.5.2",
+    "errorhandler": "^1.4.3",
     "loopback": "^2.27.0",
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^2.1.0",
