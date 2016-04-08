@@ -1,0 +1,29 @@
+<script type="text/javascript">
+
+    RED.nodes.registerType('BauhausJS event listener',{
+        category: 'input',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "myicon.png",
+        label: function() {
+
+            return (this.name.length > 1) ? ("Event: " + this.name ) : "BauhausJS event listener";
+
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="BauhausJS event listener">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Event Name</label>
+        <input type="text" id="node-input-name" placeholder="event name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="BauhausJS event listener">
+    <p>Listen to BauhausJS events and trigger actions.</p>
+</script>
