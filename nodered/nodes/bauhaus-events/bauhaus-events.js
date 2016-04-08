@@ -10,17 +10,17 @@ module.exports = function(RED) {
         _registerEvent(eventName);
 
         function _registerEvent(pEventName){
+
             // register event once
             // (workaround since it was not possible to unbind events in case of a new event name)
             app.once(pEventName, function() {
 
-                var msg = {};
-                msg.payload = arguments;
-                node.send(msg);
-
                 // re-register event with current name
                 _registerEvent(eventName)
 
+                var msg = {};
+                msg.payload = arguments;
+                node.send(msg);
             });
         }
     }

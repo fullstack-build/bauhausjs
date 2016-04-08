@@ -3,14 +3,7 @@
     "loopback#favicon": {}
   },
   "initial": {
-    "compression": {},
-    "cors": {
-      "params": {
-        "origin": true,
-        "credentials": true,
-        "maxAge": 86400
-      }
-    }
+    "compression": {}
   },
   "session": {
   },
@@ -29,6 +22,6 @@
     "loopback#urlNotFound": {}
   },
   "final:after": {
-    "loopback#errorHandler": {}
+    "errorhandler": {}
   }
 }
