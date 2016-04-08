@@ -5,7 +5,6 @@
   "main": "server/server.js",
   "scripts": {
     "start": "nodemon .",
-    "pretest": "jshint .",
     "test": "tape tests/**/*.js"
   },
   "dependencies": {
