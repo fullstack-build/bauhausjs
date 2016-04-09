@@ -20,6 +20,10 @@
     "loopback#urlNotFound": {}
   },
   "final:after": {
-    "errorhandler": {}
+    "loopback#errorHandler": {
+      "params": {
+        "includeStack": true
+      }
+    }
   }
 }
