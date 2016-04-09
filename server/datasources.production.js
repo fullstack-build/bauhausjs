@@ -8,8 +8,9 @@ if(process &&
 
 
 if( VCAP_SERVICES['postgresql-9.1'] &&
+  VCAP_SERVICES['postgresql-9.1'][0] &&
    VCAP_SERVICES['postgresql-9.1'].credentials){
-  postgresCredentials = process.env.VCAP_SERVICES['postgresql-9.1'].credentials;
+  postgresCredentials = process.env.VCAP_SERVICES['postgresql-9.1'][0].credentials;
 }
 
 module.exports = {
