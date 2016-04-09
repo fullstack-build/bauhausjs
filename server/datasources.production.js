@@ -9,7 +9,7 @@ if(process &&
 
 if( VCAP_SERVICES['postgresql-9.1'] &&
   VCAP_SERVICES['postgresql-9.1'][0] &&
-   VCAP_SERVICES['postgresql-9.1'].credentials){
+   VCAP_SERVICES['postgresql-9.1'][0].credentials){
   postgresCredentials = VCAP_SERVICES['postgresql-9.1'][0].credentials;
 }
 
@@ -25,4 +25,4 @@ module.exports = {
   }
 };
 
-console.log("using PRODUCTION configuration:", VCAP_SERVICES['postgresql-9.1'][0], postgresCredentials);
+console.log("using PRODUCTION configuration:", postgresCredentials);
