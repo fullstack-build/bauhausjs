@@ -25,4 +25,4 @@ module.exports = {
   }
 };
 
-console.log("using PRODUCTION configuration:", postgresCredentials);
+console.log("using PRODUCTION configuration");
