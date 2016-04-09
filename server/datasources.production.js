@@ -24,4 +24,4 @@ module.exports = {
   }
 };
 
-console.log("using PRODUCTION configuration:", process.env, postgresCredentials);
+console.log("using PRODUCTION configuration:", VCAP_SERVICES, postgresCredentials);
