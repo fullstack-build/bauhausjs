@@ -18,3 +18,5 @@ module.exports = {
     "connector": "postgresql"
   }
 };
+
+console.log("using PRODUCTION configuration:", module.exports);
