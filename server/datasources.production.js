@@ -1,10 +1,16 @@
-var postgresCredentials ="";
+var postgresCredentials = '';
+var VCAP_SERVICES = '';
 if(process &&
   process.env &&
-  process.env.VCAP_SERVICES &&
-  process.env.VCAP_SERVICES['postgresql-9.1'] &&
-  process.env.VCAP_SERVICES['postgresql-9.1'].credentials){
-  postgresCredentials = process.env.VCAP_SERVICES['postgresql-9.1'].credentials;
+  process.env.VCAP_SERVICES){
+  VCAP_SERVICES = JSON.parse(process.env.VCAP_SERVICES);
+}
+
+
+if( VCAP_SERVICES['postgresql-9.1'] &&
+  VCAP_SERVICES['postgresql-9.1'][0] &&
+  VCAP_SERVICES['postgresql-9.1'][0].credentials){
+  postgresCredentials = VCAP_SERVICES['postgresql-9.1'][0].credentials;
 }
 
 module.exports = {
@@ -19,4 +25,4 @@ module.exports = {
   }
 };
 
-console.log("using PRODUCTION configuration:", module.exports);
+console.log("using PRODUCTION configuration");
