@@ -9,7 +9,7 @@ if(process &&
 
 if( VCAP_SERVICES['postgresql-9.1'] &&
   VCAP_SERVICES['postgresql-9.1'][0] &&
-   VCAP_SERVICES['postgresql-9.1'][0].credentials){
+  VCAP_SERVICES['postgresql-9.1'][0].credentials){
   postgresCredentials = VCAP_SERVICES['postgresql-9.1'][0].credentials;
 }
 
