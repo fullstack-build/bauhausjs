@@ -31,7 +31,7 @@
     "dataSource": "emailDs"
   },
   "user": {
-    "dataSource": "db",
+    "dataSource": "postgres",
     "public": true,
     "options": {
       "emailVerificationRequired": true

@@ -21,5 +21,14 @@
         }
       }
     ]
+  },
+  "postgres": {
+    "host": "",
+    "port": 0,
+    "database": "bauhaus",
+    "password": "",
+    "name": "postgres",
+    "user": "",
+    "connector": "postgresql"
   }
 }
