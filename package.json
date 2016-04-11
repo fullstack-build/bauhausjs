@@ -4,7 +4,7 @@
   "description": "",
   "main": "server/server.js",
   "scripts": {
-    "start": "nodemon .",
+    "start": "node .",
     "test": "tape tests/**/*.js"
   },
   "dependencies": {
