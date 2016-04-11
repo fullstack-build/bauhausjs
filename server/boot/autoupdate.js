@@ -1,6 +1,7 @@
 /// <reference path="../../typings/node.d.ts" />
 'use strict';
 function autoUpdate(app) {
+    console.error("********");
     var ds = app.dataSources.postgres;
     var appModels = ['user'];
     ds.isActual(appModels, function (err, actual) {
